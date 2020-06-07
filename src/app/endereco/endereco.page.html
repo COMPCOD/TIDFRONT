@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Endereco</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    
+    <ion-item>
+      <ion-label >Cidade</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.cidade"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >Rua</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.rua"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Cep</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.cep"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Bairro</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.bairro"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Estado</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.estado"> </ion-input>
+    </ion-item>
+
+  </ion-list>
+<ion-button full (click)="Endereco()" expand="block" color="tertiary">Finalizar</ion-button>
+</ion-content>

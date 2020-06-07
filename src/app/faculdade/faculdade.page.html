@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro da Faculdade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list >
+    
+    <ion-item> 
+      <ion-label >Nome da instituição</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.nome_inst"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >Semestre</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.semestre"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Curso</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.curso"> </ion-input>
+    </ion-item>
+  
+<ion-button full (click)="Faculdade()" expand="block" color="tertiary">Finalizar</ion-button>
+</ion-list >
+</ion-content>
+

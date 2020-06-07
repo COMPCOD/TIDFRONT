@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Fornecedor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    
+    <ion-item>
+      <ion-label >Nome do Fornecedor</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.razao_social"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CNPJ</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.cnpj"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Insc_Municipal</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.insc_municipal"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Insc_Estadual</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.insc_estadual"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Servico</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.servico"> </ion-input>
+    </ion-item>
+
+  </ion-list>
+<ion-button full (click)="Cadastro()" expand="block" color="tertiary">Finalizar</ion-button>
+</ion-content>
+
+

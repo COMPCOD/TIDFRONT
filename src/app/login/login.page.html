@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content> 
+  <ion-list inset>
+    <ion-item>
+      <ion-label >Email</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.email"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Senha</ion-label>
+      <ion-input color="tertiary" type="text" value="" [(ngModel)]="data.senha"> </ion-input>
+    </ion-item>
+
+  </ion-list>
+<ion-button full (click)="postJSON()" expand="block" color="tertiary">Login</ion-button>
+
+
+</ion-content>

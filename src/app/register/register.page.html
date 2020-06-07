@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro Do Associado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+
+    <ion-item>
+      <ion-label >Nome Completo</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.nome_completo"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CPF</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.cpf_user"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >RG</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="data.rg_user"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Nome da mae</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.nome_da_mae"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Nome do pai</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.nome_do_pai"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Data de Nascimento</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.d_nascimento"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Cargo</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.cargo"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Email</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="data.email"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Senha</ion-label>
+      <ion-input color="tertiary" type="text" value="" [(ngModel)]="data.senha"> </ion-input>
+    </ion-item>
+
+  </ion-list>
+<ion-button full (click)="Cadastro()" expand="block" color="tertiary">Cadastrar</ion-button>
+</ion-content>
